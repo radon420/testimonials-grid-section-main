@@ -1,0 +1,149 @@
+html {
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    width: auto;
+    background-color: hsl(210, 46%, 95%);
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0%;
+    overflow: auto;
+  }
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+  }
+  #quotationmarks{
+    position: absolute;
+    right: 20%;
+    top: 2px;
+    opacity: 50%;
+    z-index: 0;
+  }
+  .reviewerImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid lightcoral;
+  }
+  
+  .imageandnamecontainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    text-indent: 15px;
+  }
+  
+  .reviewersNameClass {
+    font-size: 0.9rem;
+  }
+  
+  .reviewerOccupation,
+  .detailedReview {
+    opacity: 50%;
+  }
+  
+  .basicReview {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  .detailedReview,
+  .basicReview {
+    overflow-wrap: break-word;
+  }
+  
+  #danielClifford,
+  #jonathanWalters,
+  #jeanetteHarmon,
+  #patrickAbrams,
+  #kiraWhittle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.20);
+  }
+  
+  #danielClifford,
+  #jonathanWalters,
+  #patrickAbrams {
+    color: hsl(210, 46%, 95%);
+  }
+  
+  #jeanetteHarmon,
+  #kiraWhittle {
+    color: hsl(217, 19%, 35%);
+    background-color: white;
+  }
+  
+  /*Per person details*/
+  #danielClifford {
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+  }
+  
+  #jonathanWalters {
+    background-color: hsl(217, 19%, 35%);
+  }
+  
+  #patrickAbrams {
+    background-color: hsl(219, 29%, 14%);
+  }
+  
+  @media only screen and (min-width: 576px) {
+    html {
+      width: auto;
+      max-width: 1080px;
+      padding: 5%;
+      padding-top: 7%;
+      padding-bottom: 7%;
+      height: auto;
+      margin: 0px auto;
+    }
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    #danielClifford,
+    #jonathanWalters,
+    #jeanetteHarmon,
+    #patrickAbrams,
+    #kiraWhittle {
+      margin: 5px;
+      padding: 5%;
+    }
+    .leftbox {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
+    .leftboxbottom,
+    .leftboxtop {
+      display: flex;
+    }
+    .rightbox {
+      display: flex;
+      width: 25%;
+    }
+    #danielClifford,
+    #patrickAbrams {
+      flex-basis: 70%;
+    }
+    #jonathanWalters,
+    #jeanetteHarmon {
+      flex-basis: 30%;
+    }
+    #kiraWhittle {
+      overflow-wrap: break-word;
+      flex-basis: 100%;
+    }
+  }
+  
