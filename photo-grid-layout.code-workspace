@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../photo-grid-layout"
+	}
+],
+  "settings": {
+    "editor.parameterHints.cycle": false,
+    "editor.parameterHints.enabled": false,
+    "editor.inlayHints.enabled": "off",
+    "workbench.editor.untitled.hint": "hidden"
+  }
+}
